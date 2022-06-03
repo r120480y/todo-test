@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function addTask (descName, taskName) {
+        if (project[descName] === undefined) {
+            alert(Такая доска не существует)
+        } else {
+            if (project[descName][taskName] !==  undefined ) {
+                alert(Такая задача существует)
+            } else {
+                project[descName][taskName] = {}
+            }
+        }
+
+
+    }
+
+</script>
+</body>
+</html>
